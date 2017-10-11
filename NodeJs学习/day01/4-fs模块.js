@@ -30,5 +30,25 @@ http.createServer(function (req,res) {
     // });
     //3.创建文目录
     // fs.mkdir('./hello');
-    
+    //4.异步读取文件状态
+    fs.readdir('./album/',function (err,files) {
+        //这是个自启动迭代函数，从零开始
+        (function iteraotr(i) {
+            if(i==files.length)
+            {
+                return;
+
+            }
+
+                fs.stat('./album/'+files[i],function (err,stats) {
+                        if(stats.isFile())
+                        {
+                            console.log(files[i]+"  is file");
+                        }
+                    })
+                iteraotr(i+1);
+
+        })(0);
+        res.end();
+    });
 }).listen(3000,'127.0.0.1');
