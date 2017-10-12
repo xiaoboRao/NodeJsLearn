@@ -38,7 +38,7 @@ app.get('/',function (req,res) {
 //post方法
 //由于post方法中，express么有提供相应的获取参数的方法，所以用了个body-parser来获取传来的参数；
 app.post('/',function (req,res) {
-    res.setHeader('Content-Type', 'text/plain');
+    // res.setHeader('Content-Type', 'text/plain');
     res.send(req.body);
 });
 app.listen(3000);
