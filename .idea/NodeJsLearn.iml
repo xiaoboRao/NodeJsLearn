@@ -5,9 +5,12 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/NodeJs学习/day02/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/NodeJs学习/day03/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/NodeJs学习/day04/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/NodeJs学习/day05/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
+    <content url="file://$MODULE_DIR$/NodeJs学习/day04/node_modules" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
